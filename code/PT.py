@@ -383,8 +383,8 @@ def PT_Inversion(p, a1, a2, p1, p2, p3, T3):
      # Sanity check for total number of levels
      check = len(p_l1) + len(p_l2_pos) + len(p_l2_neg) + len(p_l3)
      print  ('Total number of levels in p: ', len(p))
-     print  ('\nLevels per levels in inversion case (l1, l2_pos, l2_neg,
-             l3) are respectively: ', len(p_l1), len(p_l2_pos),
+     print  ('\nLevels per levels in inversion case (l1, l2_pos, l2_neg,\
+             l3) are respectively: ', len(p_l1), len(p_l2_pos),\
              len(p_l2_neg), len(p_l3))
      print  ('Checking total number of levels in inversion case: ', check)
 
