@@ -371,7 +371,7 @@ def PT_Inversion(p, a1, a2, p1, p2, p3, T3):
 
      # Error message when temperatures ar point 1, 2 or 3 are < 0
      if T0<0 or T1<0 or T2<0 or T3<0:
-          print 'T0, T1, T2 and T3 temperatures are: ', T0, T1, T2, T3
+          print( 'T0, T1, T2 and T3 temperatures are: ', T0, T1, T2, T3)
           raise ValueError('Input parameters give non-physical profile. Try again.')
 
      # Defining arrays of pressures for every part of the PT profile
