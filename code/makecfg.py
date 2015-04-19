@@ -54,7 +54,12 @@
 # ******************************* END LICENSE *******************************
 
 import os, sys
-import argparse, ConfigParser
+pymajor = sys.version_info[0]
+if pymajor < 3:
+        import argparse, ConfigParser
+else:
+        import argparse, configparser
+
 import numpy as np
 
 filedir = os.path.dirname(os.path.realpath(__file__))
