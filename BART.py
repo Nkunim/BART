@@ -261,6 +261,7 @@ def main():
   cargs, remaining_argv = cparser.parse_known_args()
   # Get only the arguments defined above:
   known, unknown = parser.parse_known_args(remaining_argv)
+  print(parser)
 
   # Get configuration file from command-line:
   cfile = cargs.config_file
