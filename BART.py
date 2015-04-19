@@ -56,7 +56,11 @@
 # ******************************* END LICENSE *******************************
 
 import sys, os, re, shutil, time, subprocess
-import argparse, ConfigParser
+pymajor = sys.version_info[0]
+if pymajor < 3:
+    import argparse, ConfigParser
+else:
+    import argparse, configparser
 import numpy as np
 
 # Directory of BART.py file:
