@@ -55,12 +55,12 @@
 # Thank you for testing BART!
 # ******************************* END LICENSE *******************************
 
-import sys, os, re, shutil, time, subprocess
+import sys, os, re, shutil, time, subprocess,argparse
 pymajor = sys.version_info[0]
 if pymajor < 3:
-    import argparse, ConfigParser
+    import ConfigParser
 else:
-    import argparse, configparser
+    import configparser as ConfigParser
 import numpy as np
 
 # Directory of BART.py file:

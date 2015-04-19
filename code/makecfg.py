@@ -53,12 +53,12 @@
 # Thank you for testing BART!
 # ******************************* END LICENSE *******************************
 
-import os, sys
+import os, sys,argparse
 pymajor = sys.version_info[0]
 if pymajor < 3:
-        import argparse, ConfigParser
+        import ConfigParser
 else:
-        import argparse, configparser
+        import configparser as ConfigParser
 
 import numpy as np
 
