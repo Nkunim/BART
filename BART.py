@@ -297,7 +297,7 @@ def main():
   mu.msg(1, "Output folder: '{:s}'".format(date_dir), 2)
   try:
     os.mkdir(date_dir)
-  except OSError, e:
+  except OSError as e:
     if e.errno == 17: # Allow overwritting while we debug
       pass
     else:
